@@ -19,7 +19,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Bricolage Grotesque';
     }
 
     html {
@@ -89,7 +89,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: slideUp 1s ease-out;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); */
 }
 
 .hero p {
@@ -98,7 +98,7 @@
   color: #f1f1f1;
   font-weight: 400;
   color: #545353;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); */
 }
 .portfolio {
   max-width: 800px;
@@ -139,8 +139,8 @@
 }
 
 .experience h1 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.7rem;
+  margin-bottom: 3rem;
   color: #333;
 }
 
@@ -149,14 +149,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
-  max-width: 1100px;
+  gap: 7rem;
+  max-width: 1200px;
   width: 100%;
 }
 
 /* Style each card */
 .exp-card {
-  background-color: #f9f9f9;
+  background-color: #fff;
   padding: 1rem 1.2rem;
   border-radius: 10px;
   width: 300px;
@@ -186,6 +186,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+margin-left: 150px;
 }
 
 .skills span {
@@ -197,6 +198,9 @@
   color: #000;
   border: none;
   transition: all 0.3s ease;
+}
+.popp{
+  margin-bottom: 10px;
 }
 
 
@@ -215,8 +219,8 @@
     }
 
     section h3 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+  font-size: 2.7rem;
+      margin-bottom: 3rem;
     }
 
     .about-content {
@@ -241,9 +245,9 @@
 
 
 .about-content p {
-  max-width: 500px;
+  max-width: 1000px;
   font-size: 1.1rem;
-  text-align: left;
+  text-align: center;
 }
 
 
@@ -261,7 +265,7 @@
 
 .projects-section h2 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   color: #222;
 }
 
@@ -295,6 +299,7 @@
 .project-card h3 {
   color: #b450b9;
   margin-bottom: 0.5rem;
+  font-size: 1.5rem;
 }
 
 .project-card p {
@@ -337,7 +342,7 @@
 
 
 .project-card a {
-  background-color: #0072ff;
+  background-color: #555;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 6px;
@@ -391,6 +396,9 @@
       flex-direction: column;
       max-width: 500px;
       margin: auto;
+      border: 1px solid #b450b9 ;
+      border-radius: 7px;
+      padding: 20px;
     }
 
     .contact input, .contact textarea {
@@ -506,7 +514,7 @@ body {
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: width 0.2s ease, height 0.3s ease, border-color 0.3s;
+  transition: width 0.5s ease, height 0.5s ease, border-color 0.5s;
   z-index: 9999;
 }
 
@@ -529,5 +537,135 @@ body {
   100% {
     opacity: 0;
     transform: scale(2) translateY(-20px);
+  }
+}
+/* 📱 Mobile & Small Tablet Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  nav h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .skills {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .experience-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .project-card,
+  .project-item {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .contact form {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  #cursor-circle {
+    width: 25px;
+    height: 25px;
+  }
+
+  .star {
+    font-size: 14px;
+  }
+
+  .popup-box {
+    width: 90%;
+    padding: 1.2rem;
+  }
+
+  .popup-box p {
+    font-size: 1rem;
+  }
+
+  .popup-box button {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .footer {
+    padding: 1rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .footer .social-icons a {
+    font-size: 1.2rem;
+  }
+}
+
+/* 📺 Medium Screens (Tablet & Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .experience-cards {
+    gap: 4rem;
+  }
+
+  .skills {
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .hero h2  {
+    display: none;
+  }
+   .hero p  {
+    display: none;
   }
 }
