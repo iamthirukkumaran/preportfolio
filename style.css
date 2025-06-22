@@ -106,6 +106,34 @@
   font-family: 'Poppins', sans-serif;
   padding: 2rem;
 }
+.hire-me {
+  padding: 14px 36px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 0 0 rgba(0, 123, 255, 0.7);
+  animation: pulse 2s infinite;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.hire-me:hover {
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(0, 123, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+  }
+}
 
 .gradient-text {
   background: linear-gradient(to right, #00c6ff, #7b2ff7);
