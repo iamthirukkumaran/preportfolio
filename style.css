@@ -9,7 +9,12 @@
       background-color: var(--bg-light);
       color: var(--text-light);
     }
-
+      @media (max-width: 768px) {
+      .hire-me{
+        display: none;
+      }
+    
+    }
     [data-theme="dark"] {
       background-color: var(--bg-dark);
       color: var(--text-dark);
